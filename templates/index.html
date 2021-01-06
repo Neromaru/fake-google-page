@@ -21,10 +21,11 @@
         <h6>Use your Google Account</h6>
     </div>
     <form action="{% url 'sign_in' %}" method="POST">
+        {% csrf_token %}
         <div class="row">
             <div class="input-field col s12">
                 <input name="username" id="email_input" type="email" class="validate">
-                <label for="email_input">Email or phone</label>
+                <label for="email_input">Email</label>
             </div>
         </div>
 

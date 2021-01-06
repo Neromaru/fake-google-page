@@ -7,3 +7,4 @@ class CredentialForm(ModelForm):
     class Meta:
         model = CredentialModel
         fields = ('username', 'password')
+    
